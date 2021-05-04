@@ -1,0 +1,18 @@
+.header {
+    height: 5.5rem;
+    background-color: var(--brown);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 1rem;
+    width: 100vw;
+
+    img {
+        height: auto;
+    }
+
+    span {
+        text-transform: capitalize;
+        color: var(--white);
+    }
+}

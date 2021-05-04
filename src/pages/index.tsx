@@ -1,8 +1,9 @@
 
+import Header from '../components/Header/Header';
 export default function Home() {
   return (
     <div>
-      <h1>oi</h1>
+      <Header/>
       <h2>oi</h2>
     </div>
   )
