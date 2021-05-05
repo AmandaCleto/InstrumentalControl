@@ -8,22 +8,19 @@ export default function Header() {
         locale: ptBR,
     });
 
-    let [state, setState] = useState({currentSrc: ''})
-
-    const onLoad = (event) => {
-      setState({
-        currentSrc: event
-      });
-    }
-
     return (
         <header className={styles.header}>
-           <img
+          <img
+            src="/logo.png"
+            alt="logo"
+            className={styles.logoDesktop}
+          />
+          <img
             src="/logo-mobile.png"
             alt="logo"
-            srcSet="/logo-mobile.png 158w, /logo.png 500w"
-            sizes="50vw"
-        />
+            className={styles.logoMobile}
+          />
+          <span>{currentData}</span>
         </header>
     )
 }

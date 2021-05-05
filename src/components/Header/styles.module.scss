@@ -4,8 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 1rem;
-    width: 100vw;
+    padding: 0px 2rem;
+    width: 100%;
+    border-bottom: 3px solid #BFA169;
 
     img {
         height: auto;
@@ -14,5 +15,22 @@
     span {
         text-transform: capitalize;
         color: var(--white);
+    }
+
+    @media screen and (min-width: 1200px) {
+        .logoDesktop {
+            display: block;
+        }
+        .logoMobile {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .logoDesktop {
+            display: none;
+        }
+        .logoMobile {
+            display: block;
+        }
     }
 }

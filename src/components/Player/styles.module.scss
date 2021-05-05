@@ -1,0 +1,127 @@
+.playerContainer {
+    padding: 3rem 3rem;
+    width: 26.5rem;
+    height: 100vh;
+    background: var(--gradient-brow-green);
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            margin-left: 1rem;
+            color: var(--white);
+        }
+    }
+
+    .emptyPlayer {
+        width: 100%;
+        height: 20rem;
+        background-color: #212E33;
+        border-radius: 1.5rem;
+        border: 1.50px dashed var(--medium-brown);
+
+        padding: 4rem;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            color: var(--white);
+        }
+    }
+
+    footer.playerControler {
+        align-self: stretch;
+
+        &.empty {
+            opacity: 0.5;
+        }
+
+        .progress {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.875rem;
+
+            span {
+                display: inline-block;
+                // width: 4rem;
+                text-align: center;
+            }
+
+            .slider {
+                flex: 1;
+                .emptySlider {
+                    width: 100%;
+                    height: 4px;
+                    background: var(--ligth-brown);
+                }
+            }
+
+        }
+
+        .controler {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .buttonController {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1.3rem;
+                gap: 1.5rem;
+
+                &.playButton {
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 1rem;
+                    background: var(--medium-brown);
+                }
+            }
+
+            .upperButton {
+                margin-top: 2rem;
+            }
+
+            button {
+                background: transparent;
+                outline: unset;
+                box-shadow: none;
+                border: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .playerContainer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20vh;
+
+        header {
+            margin-bottom: 1rem;
+        }
+
+        .emptyPlayer {
+            display: none !important;
+        }
+
+        footer.playerController {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
