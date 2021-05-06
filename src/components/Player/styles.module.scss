@@ -1,46 +1,95 @@
 .playerContainer {
-    padding: 3rem 3rem;
-    width: 26.5rem;
+    padding: 1rem 2rem;
+    // width: 26.5rem;
+    width: 22.5rem;
     height: 100vh;
     background: var(--gradient-brow-green);
     color: var(--white);
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
+    .button {
+        background: transparent;
+        outline: unset;
+        box-shadow: none;
+        border: none;
+    }
+
     header {
         display: flex;
-        align-items: center;
-        justify-content: center;
-
-        p {
-            margin-left: 1rem;
-            color: var(--white);
-        }
-    }
-
-    .emptyPlayer {
+        align-items: flex-start;
+        justify-content: space-between;
         width: 100%;
-        height: 20rem;
-        background-color: #212E33;
-        border-radius: 1.5rem;
-        border: 1.50px dashed var(--medium-brown);
 
-        padding: 4rem;
-        text-align: center;
+        .arrowLeft {
+            margin-right: 1rem;
+            padding: 10px 14px;
+            border-radius: 10px;
+        }
+        .arrowLeft:hover {
+            background-color: rgba(255, 255, 255, 0.089);
+        }
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        p {
-            color: var(--white);
+        .playlist {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+            p {
+                margin-right: 1rem;
+                color: var(--white);
+                font-weight: 400;
+                font-size: 0.75rem;
+                text-align: end;
+            }
+            img {
+                padding: 10px;
+                border-radius: 10px;
+            }
+            img:hover {
+                background-color: rgba(255, 255, 255, 0.089);
+            }
         }
     }
 
-    footer.playerControler {
+    .albumCover {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .emptyPlayer {
+            width: 85%;
+            height: 15rem;
+            background-color: #212E33;
+            border-radius: 1.5rem;
+            border: 1.50px dashed var(--medium-brown);
+            padding: 2rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .musicName {
+            text-align: center;
+            p {
+                color: var(--white);
+                margin: 1rem auto 0 auto;
+                text-align: center;
+
+                span {
+                    font-size: 0.80rem;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+
+    footer.playerController {
         align-self: stretch;
 
         &.empty {
@@ -91,37 +140,109 @@
                 }
             }
 
-            .upperButton {
-                margin-top: 2rem;
-            }
-
             button {
                 background: transparent;
                 outline: unset;
                 box-shadow: none;
                 border: none;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            button:hover {
+                background-color: rgba(255, 255, 255, 0.089);
             }
         }
     }
 }
 
+
+@media screen and (min-width: 1200px) {
+    .sliderMobileOnly {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .playerContainer {
+        padding: 1rem;
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 20vh;
+        height: 18vh;
+
+        .sliderMobileOnly {
+            width: 100%;
+            height: 4px;
+            background-color: brown;
+            position: absolute;
+            top: 0;
+        }
 
         header {
-            margin-bottom: 1rem;
+            margin-bottom: 0rem;
+
+            .arrowLeft {
+                transform: rotate(90deg);
+            }
+
+            .playlist {
+                p {
+                    display: none;
+                }
+            }
         }
 
         .emptyPlayer {
             display: none !important;
         }
 
+        .albumCover {
+            margin-bottom: 0;
+            position: absolute;
+            left: 24px;
+            bottom: 0px;
+
+            .musicName {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 1rem;
+
+                p {
+                    margin: 0rem 1rem 0rem 0rem;
+                    text-align: start;
+                }
+            }
+        }
+
         footer.playerController {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 2.5rem;
+
+            .progress {
+                display: none;
+            }
+
+            .controler {
+                position: absolute;
+                bottom: 10px;
+                right: 20px;
+                .buttonController {
+                    margin-top: 0rem;
+                    margin-left: 15px;
+
+                    img {
+                        width: 12px;
+                    }
+                }
+
+                button:first-child, button:last-child {
+                    display: none;
+                }
+            }
         }
     }
 }
