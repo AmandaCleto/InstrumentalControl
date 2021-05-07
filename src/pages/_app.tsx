@@ -5,7 +5,7 @@ import Player from '../components/Player/Player';
 
 import styles from '../sytles/app.module.scss';
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <div className={styles.wrapper}>
       <main>
@@ -17,4 +17,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default App

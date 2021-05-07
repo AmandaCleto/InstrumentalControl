@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './styles.module.scss';
 
-export default function Header() {
+export default function Player() {
     return (
       <div className={styles.playerContainer}>
         <div className={styles.sliderMobileOnly}>
