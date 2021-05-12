@@ -11,14 +11,9 @@ export default function Header() {
     return (
         <header className={styles.header}>
           <img
-            src="/logo.png"
+            src="/logo.svg"
             alt="logo"
             className={styles.logoDesktop}
-          />
-          <img
-            src="/logo-mobile.png"
-            alt="logo"
-            className={styles.logoMobile}
           />
           <span>{currentData}</span>
         </header>

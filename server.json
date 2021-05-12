@@ -3,7 +3,9 @@
         {
             "id": "automotive-media-the-messanger",
             "title": "Automotive Media - The Messenger",
+            "album": "Automative Media",
             "published_at": "2021-01-22 16:35:40",
+            "description": "Sem informações sobre origem",
             "thumbnail": "http://storage.googleapis.com/automotive-media/album_art.jpg",
             "file": {
                 "url": "http://storage.googleapis.com/automotive-media/The_Messenger.mp3",
@@ -14,7 +16,48 @@
         {
             "id": "automotive-media-the-messanger",
             "title": "Automotive Media - The Messenger",
-            "published_at": "2021-01-22 16:36:40",
+            "album": "Automative Media",
+            "published_at": "2021-01-22 16:35:40",
+            "description": "Sem informações sobre origem",
+            "thumbnail": "http://storage.googleapis.com/automotive-media/album_art.jpg",
+            "file": {
+                "url": "http://storage.googleapis.com/automotive-media/The_Messenger.mp3",
+                "type": "audio/xm4a",
+                "duration": "131"
+            }
+        },
+        {
+            "id": "automotive-media-the-messanger",
+            "title": "Automotive Media - The Messenger",
+            "album": "Automative Media",
+            "published_at": "2021-01-22 16:35:40",
+            "description": "Sem informações sobre origem",
+            "thumbnail": "http://storage.googleapis.com/automotive-media/album_art.jpg",
+            "file": {
+                "url": "http://storage.googleapis.com/automotive-media/The_Messenger.mp3",
+                "type": "audio/xm4a",
+                "duration": "131"
+            }
+        },
+        {
+            "id": "automotive-media-the-messanger",
+            "title": "Automotive Media - The Messenger",
+            "album": "Automative Media",
+            "published_at": "2021-01-22 16:35:40",
+            "description": "Sem informações sobre origem",
+            "thumbnail": "http://storage.googleapis.com/automotive-media/album_art.jpg",
+            "file": {
+                "url": "http://storage.googleapis.com/automotive-media/The_Messenger.mp3",
+                "type": "audio/xm4a",
+                "duration": "131"
+            }
+        },
+        {
+            "id": "automotive-media-the-messanger",
+            "title": "Automotive Media - The Messenger",
+            "album": "Automative Media",
+            "published_at": "2021-01-22 16:35:40",
+            "description": "Sem informações sobre origem",
             "thumbnail": "http://storage.googleapis.com/automotive-media/album_art.jpg",
             "file": {
                 "url": "http://storage.googleapis.com/automotive-media/The_Messenger.mp3",

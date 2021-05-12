@@ -37,11 +37,13 @@ body {
 }
 
 h1 {
-  font-size: 2rem; //30px 28px
+  // font-size: 2rem; //30px 28px
+  font-size: 1.5rem; //30px 28px
 }
 
 h2 {
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 button {
@@ -56,10 +58,15 @@ button {
   --light-blue-text: #617189;
 
   --brown: #48483D;
+  --medium-brown-hover: #AB9C80;
   --medium-brown: #BFA169;
   --ligth-brown: #E8E6CB;
+  --ligth-brown-hover: #C9C594;
+
+  --border: #BFADA3;
 
   --light-green: #8CAC94;
+  --light-green-hover: #576D5C;
   --dark-green: #213A40;
 
   --gradient-brow-green: linear-gradient(180deg, #213A40 0%, #4A493D 99.99%, rgba(255, 255, 255, 0) 100%);

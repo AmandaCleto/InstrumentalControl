@@ -16,21 +16,4 @@
         text-transform: capitalize;
         color: var(--white);
     }
-
-    @media screen and (min-width: 1200px) {
-        .logoDesktop {
-            display: block;
-        }
-        .logoMobile {
-            display: none;
-        }
-    }
-    @media screen and (max-width: 1200px) {
-        .logoDesktop {
-            display: none;
-        }
-        .logoMobile {
-            display: block;
-        }
-    }
 }
