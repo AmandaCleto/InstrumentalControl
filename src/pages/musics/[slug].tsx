@@ -20,13 +20,11 @@ type MusicProps = {
     music: Music;
 };
 
-
 export default function MusicDescription({ music } : MusicProps) {
     const router = useRouter()
     return (
         <div>
             <h1>{router.query.slug}</h1>
-            <h1>{music.title}</h1>
         </div>
     )
 }
@@ -39,9 +37,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const slug = context.params;
+    const { slug } = context.params;
 
-    const { data } = await api.get(`musics/${slug}`);
+    const { data } = await api.get(`/musics/${slug}`);
 
     const music = {
         id: data.id,
