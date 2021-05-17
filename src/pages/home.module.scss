@@ -1,7 +1,15 @@
 .homepage {
-  padding: 0 2rem;
   height: calc(100vh - 5.5rem);
-  overflow-y: scroll;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1400px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 4rem;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 0 2rem;
+  }
 }
 
 .latestSongsSection {
@@ -14,31 +22,18 @@
   .latestSongs {
     display: flex;
 
-    .latestSongsBox:nth-child(2n + 1) {
-      background-color: var(--brown);
+    .latestSongsBox {
+      background-color: var(--medium-dark-green);
 
       div:first-child {
         a:hover {
-          color: var(--medium-brown-hover);
+          color: var(--ligth-brown-hover);
         }
       }
       div:last-child {
         button:hover {
           background: var(--ligth-brown-hover);
-        }
-      }
-    }
-    .latestSongsBox:nth-child(2n) {
-      background-color: var(--light-green);
-
-      div:first-child {
-        a:hover {
-          color: var(--light-green-hover);
-        }
-      }
-      div:last-child {
-        button:hover {
-          background: var(--ligth-brown-hover);
+            transform: scale(1.2);
         }
       }
     }
@@ -151,6 +146,7 @@
 
       a:hover {
         color: var(--medium-brown-hover);
+        transform: scale(1.2);
       }
     }
     button {
@@ -172,6 +168,7 @@
     }
     button:hover {
       background: var(--ligth-brown-hover);
+      transform: scale(1.2);
     }
   }
 }
@@ -190,5 +187,6 @@
   }
   .dNoneDesk {
     display: none;
+  }
 }
-}
+

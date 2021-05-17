@@ -1,7 +1,14 @@
 .wrapper {
     display: flex;
-
+    transition: ease 1s;
+    overflow: auto;
     main {
         flex: 1;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .wrapper {
+        padding-left: 22.5rem;
     }
 }

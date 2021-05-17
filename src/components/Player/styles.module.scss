@@ -1,6 +1,23 @@
+.varHidePlayerDesk {
+    transform: translateX(-22.5rem);
+
+    .wrapper {
+        padding: 0 !important;
+    }
+
+    button.openPlayer {
+        opacity: 1;
+    }
+    button.openPlayer:hover {
+        transform: scale(1.2);
+        background-color: rgba(255, 255, 255, 0.089);
+    }
+}
+
 .playerContainer {
     padding: 1rem 2rem;
-    // width: 26.5rem;
+    position: absolute;
+    left: 0;
     width: 22.5rem;
     height: 100vh;
     background: var(--gradient-brow-green);
@@ -9,6 +26,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    transition: 1s all ease;
 
     .button {
         background: transparent;
@@ -24,21 +42,22 @@
         width: 100%;
 
         .arrowLeft {
-            margin-right: 1rem;
+            margin-left: 1rem;
             padding: 10px 14px;
             border-radius: 10px;
         }
         .arrowLeft:hover {
             background-color: rgba(255, 255, 255, 0.089);
+            transform: scale(1.2);
         }
 
         .playlist {
             display: flex;
             align-items: center;
-            justify-content: flex-end;
-            width: 100%;
+            justify-content: flex-start;
+            flex: 1;
             p {
-                margin-right: 1rem;
+                margin-left: 1rem;
                 color: var(--white);
                 font-weight: 400;
                 font-size: 0.75rem;
@@ -50,16 +69,18 @@
             }
             img:hover {
                 background-color: rgba(255, 255, 255, 0.089);
+                transform: scale(1.2);
             }
         }
     }
 
-    .albumCover {
+    main.albumCover {
         margin-bottom: 3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
 
         .emptyPlayer {
             width: 85%;
@@ -67,15 +88,17 @@
             background-color: #212E33;
             border-radius: 1.5rem;
             border: 1.50px dashed var(--medium-brown);
-            padding: 2rem;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+
+            p {
+                color: var(--white);
+                padding: 6rem 2rem;
+            }
         }
 
         .musicName {
             text-align: center;
+            width: 100%;
             p {
                 color: var(--white);
                 margin: 1rem auto 0 auto;
@@ -104,7 +127,6 @@
 
             span {
                 display: inline-block;
-                // width: 4rem;
                 text-align: center;
             }
 
@@ -151,15 +173,34 @@
 
             button:hover {
                 background-color: rgba(255, 255, 255, 0.089);
+                transform: scale(1.1);
             }
         }
     }
 }
 
 
+
 @media screen and (min-width: 1200px) {
     .sliderMobileOnly {
         display: none;
+    }
+
+    .openPlayer {
+        position: absolute;
+        right: -28px;
+        z-index: 1;
+        width: 30px;
+        height: 35px;
+        background: var(--gradient-brow-green) !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 100px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: opacity .6s linear, transform .1s linear;
+        opacity: 0;
     }
 }
 
@@ -197,9 +238,8 @@
             display: none !important;
         }
 
-        .albumCover {
+        main.albumCover {
             margin-bottom: 0;
-            position: absolute;
             left: 24px;
             bottom: 0px;
 

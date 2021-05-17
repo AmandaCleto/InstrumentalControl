@@ -10,14 +10,14 @@ body, input, textarea, button {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  color: var(--dark-blue-text);
-  font: Poppins, sans-serif;
+  color: var(--dark-blue);
+  font-family: Poppins, sans-serif;
 }
 
 p {
   font-weight: 500;
-  color: var(--dark-blue-text);
-  font: Poppins, sans-serif;
+  color: var(--dark-blue);
+  font-family: Poppins, sans-serif;
 }
 
 body {
@@ -53,9 +53,8 @@ button {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --dark-blue-text: #223136;
-  --medium-blue-text: #23363E;
-  --light-blue-text: #617189;
+  --dark-blue: #223136;
+  --light-blue: #617189;
 
   --brown: #48483D;
   --medium-brown-hover: #AB9C80;
@@ -67,7 +66,7 @@ button {
 
   --light-green: #8CAC94;
   --light-green-hover: #576D5C;
-  --dark-green: #213A40;
+  --medium-dark-green: #213A40;
 
   --gradient-brow-green: linear-gradient(180deg, #213A40 0%, #4A493D 99.99%, rgba(255, 255, 255, 0) 100%);
 }

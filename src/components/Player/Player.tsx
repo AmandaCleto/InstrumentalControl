@@ -1,35 +1,55 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import styles from './styles.module.scss';
 
-export default function Player() {
+export default function Player(refWrapper) {
+  const [ativo, setAtivo] = useState(false);
+  const refPlayerContainer = useRef<HTMLDivElement>(null);
+
+  const closePlayer = () => {
+    refWrapper.refWrapper.current.style.padding = 0;
+    document.body.style.overflowX = 'hidden';
+    refPlayerContainer.current.style.transitionDelay = '35ms';
+    setAtivo(true);
+  }
+
+  const openPlayer = () => {
+    refWrapper.refWrapper.current.style.paddingLeft = '22.4rem';
+    document.body.style.overflowX = 'auto';
+    refPlayerContainer.current.style.transitionDelay = '0ms';
+    setAtivo(false);
+  }
     return (
-      <div className={styles.playerContainer}>
+      <div className={`${styles.playerContainer}  ${ativo ? styles.varHidePlayerDesk : ''}`} ref={refPlayerContainer}>
+        <button className={`${styles.button} ${styles.openPlayer}`} onClick={openPlayer}>
+          <img src="/arrow-right-icon.svg" alt="icone de voltar" className={styles.arrowLeft}/>
+        </button>
+
         <div className={styles.sliderMobileOnly}>
             <div className={styles.emptySlider}></div>
         </div>
 
         <header>
-          <div>
-            <button className={styles.button}>
-              <img src="/arrow-left-icon.svg" alt="icone de voltar" className={styles.arrowLeft}/>
-            </button>
-          </div>
           <div className={styles.playlist}>
-            <p>the best album..</p>
             <button className={styles.button}>
               <img src="/playlist-icon.svg" alt="icon of headset"/>
+            </button>
+            <p>the best album..</p>
+          </div>
+          <div>
+            <button className={styles.button} onClick={closePlayer}>
+              <img src="/arrow-left-icon.svg" alt="icone de voltar" className={styles.arrowLeft}/>
             </button>
           </div>
         </header>
 
-        <div className={styles.albumCover}>
+        <main className={styles.albumCover}>
           <div className={styles.emptyPlayer}>
             <p>Selecione uma música para ouvir</p>
           </div>
           <div className={styles.musicName}>
             <p>Time for Space <br className={styles.br}/><span>Emanciapator</span> </p>
           </div>
-        </div>
+        </main>
 
         <footer className={styles.playerController}>
           <div className={styles.progress}>
@@ -50,4 +70,8 @@ export default function Player() {
         </footer>
       </div>
     )
+}
+
+function setState(): [any, any] {
+  throw new Error('Function not implemented.');
 }
