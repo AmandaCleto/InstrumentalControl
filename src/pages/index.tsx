@@ -139,7 +139,7 @@ export const getStaticProps: GetStaticProps = async () => {
     };
   });
 
-  const latestSongs = musics.slice(0, 2);
+  const latestSongs = musics.slice(0, 1);
   const allSongs = musics.slice(2, musics.lenght);
 
   return {
