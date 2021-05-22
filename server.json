@@ -27,19 +27,6 @@
             }
         },
         {
-            "id": "automotive-media-the-messanger-3",
-            "title": "Automotive Media - The Messenger",
-            "album": "Automative Media",
-            "published_at": "2021-01-22 16:35:40",
-            "description": "Sem informações sobre origem",
-            "thumbnail": "http://storage.googleapis.com/automotive-media/album_art.jpg",
-            "file": {
-                "url": "http://storage.googleapis.com/automotive-media/The_Messenger.mp3",
-                "type": "audio/xm4a",
-                "duration": "131"
-            }
-        },
-        {
             "id": "automotive-media-the-messanger-4",
             "title": "Automotive Media - The Messenger",
             "album": "Automative Media",

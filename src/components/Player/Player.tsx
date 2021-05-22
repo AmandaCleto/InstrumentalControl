@@ -1,11 +1,21 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './styles.module.scss';
+import { useWindowSize } from '../../utils/windowsSize';
 
 export default function Player(refWrapper) {
   const [ativo, setAtivo] = useState(false);
   const [maximizePlayer, setMaximizePlayer] = useState(false);
   const [toggleMaxMin, setToggleMaxMin] = useState(false)
   const refPlayerContainer = useRef<HTMLDivElement>(null);
+  const size = useWindowSize();
+
+  useEffect(() => {
+    if (size.width > 1200) {
+      openPlayerDesktop()
+    } else {
+      closePlayerDesktop()
+    }
+  }, [size])
 
   const closePlayerDesktop = () => {
     refWrapper.refWrapper.current.style.padding = 0;
@@ -26,6 +36,7 @@ export default function Player(refWrapper) {
     setMaximizePlayer(true)
     setToggleMaxMin(true)
   }
+
   const maximizePlayerMobile = () => {
     if (!toggleMaxMin) return;
     setMaximizePlayer(false)
