@@ -34,7 +34,7 @@ Below are listed the necessary tools for the project to work:
 - [![Nodejs](https://amandacleto.github.io/images-for-projects/public/images/github-readme/icon-nodejs.svg)](https://nodejs.org/en/) **: NodeJS v12**  
   [<ins>Guide to how to install NodeJS</ins>](https://nodejs.org/en/).
 - [![Nodejs](https://amandacleto.github.io/images-for-projects/public/images/github-readme/icon-yarn.svg)](https://yarnpkg.com/) **: Yarn**  
-  [<ins>Guide to how to install NodeJS</ins>](https://yarnpkg.com/getting-started).
+  [<ins>Guide to how to install Yarn</ins>](https://yarnpkg.com/getting-started).
   
   
 ### Installing dependencies:
