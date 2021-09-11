@@ -1,4 +1,8 @@
-# Chillbeats
+# Chillbeats 🎧
+###### ***NOTE: This project is not fully finished and its development is currently paused. New updates coming soon...*** 🌴
+
+<br>
+
 ## Based on ***NLW5 - Next Level Week 5***
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
