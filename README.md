@@ -1,4 +1,4 @@
-# InstrumentalControl
+# Chillbeats
 ## Based on ***NLW5 - Next Level Week 5***
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -14,6 +14,8 @@
 <br>
 
 ## 💡 Idea:
+ChillBeats is a music player for your favorite songs!  
+The idea of this project was to learn more about **React with Typescript**, and the use of **NextJS**.
 
 <br>
 
